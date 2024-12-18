@@ -86,11 +86,10 @@ if st.button("🔍 预测"):
 
     # 输出结果
     st.subheader("预测结果")
+    print(1)
     st.markdown(f"<div class='stSuccess'>预测黏度: {预测黏度:.2f}</div>", unsafe_allow_html=True)
     st.markdown(f"<div class='stSuccess'>预测固含量: {预测固含量*100:.2f}</div>", unsafe_allow_html=True)
 
 st.markdown("""
 </div>
 """, unsafe_allow_html=True)
-
-print("1")
