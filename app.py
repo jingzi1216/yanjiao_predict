@@ -58,7 +58,7 @@ st.markdown("""
 <div class="main">
 """, unsafe_allow_html=True)
 
-st.write("请输入以下参数，点击预测按钮以查看结果。")
+st.write("请输入以下参数(百分数以小数格式输入)，点击预测按钮以查看结果。")
 
 # 用户输入数据
 乳液A = st.number_input("**乳液A**", value=0.0, step=0.001)
@@ -89,7 +89,7 @@ if st.button("🔍 预测"):
     st.subheader("预测结果")
 
     st.markdown(f"<div class='stSuccess'>预测黏度: {预测黏度:.2f}</div>", unsafe_allow_html=True)
-    st.markdown(f"<div class='stSuccess'>预测固含量: {预测固含量*100:.2f}</div>", unsafe_allow_html=True)
+    st.markdown(f"<div class='stSuccess'>预测固含量: {预测固含量*100:.2f}%</div>", unsafe_allow_html=True)
 
 st.markdown("""
 </div>
