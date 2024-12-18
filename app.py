@@ -7,7 +7,7 @@ model_s = joblib.load("solids.pkl")
 
 # 设置页面标题和布局
 st.set_page_config(page_title="黏度与固含量预测", layout="centered", initial_sidebar_state="collapsed")
-st.title("🌟 烟胶生产预测系统")
+st.title("烟胶生产预测系统")
 hide_streamlit_style = """
     <style>
     /* 隐藏右上角 GitHub 图标 */
