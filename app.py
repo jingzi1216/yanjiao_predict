@@ -92,3 +92,5 @@ if st.button("🔍 预测"):
 st.markdown("""
 </div>
 """, unsafe_allow_html=True)
+
+print("1")
