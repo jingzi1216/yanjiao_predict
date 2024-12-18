@@ -80,13 +80,14 @@ X_viscosity = [[乳液A粘度, 乳液F粘度, 水溶液E, 水, 乳液A固含量,
 X_solids_content = [[乳液A固含量, 乳液F固含量, 水, 乳液A粘度, 水溶液E, 乳液F粘度]]
 
 if st.button("🔍 预测"):
+    print(1)
     # 进行预测
     预测黏度 = model_v.predict(X_viscosity)[0]
     预测固含量 = model_s.predict(X_solids_content)[0]
 
     # 输出结果
     st.subheader("预测结果")
-    print(1)
+
     st.markdown(f"<div class='stSuccess'>预测黏度: {预测黏度:.2f}</div>", unsafe_allow_html=True)
     st.markdown(f"<div class='stSuccess'>预测固含量: {预测固含量*100:.2f}</div>", unsafe_allow_html=True)
 
