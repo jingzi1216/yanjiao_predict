@@ -8,6 +8,18 @@ model_s = joblib.load("solids.pkl")
 # 设置页面标题和布局
 st.set_page_config(page_title="黏度与固含量预测", layout="centered", initial_sidebar_state="collapsed")
 st.title("🌟 黏度与固含量预测系统")
+hide_streamlit_style = """
+    <style>
+    /* 隐藏右上角 GitHub 图标 */
+    #MainMenu {visibility: hidden;}
+    /* 隐藏页脚 */
+    footer {visibility: hidden;}
+    /* 隐藏顶部的 Streamlit 菜单 */
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 
