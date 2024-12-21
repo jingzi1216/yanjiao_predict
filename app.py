@@ -76,7 +76,7 @@ st.write("请输入以下参数(百分数以小数格式输入)，点击预测�
 其他固含量 = st.number_input("**其它固含量**", value=0.0, step=0.001, format="%.3f")
 
 # 构建特征数组
-X_viscosity = [[乳液A粘度, 乳液F粘度, 水溶液E, 水, 乳液A固含量, 乳液F固含量]]
+X_viscosity = [[乳液A粘度, 乳液F粘度, 水溶液E,水溶液F, 水, 乳液A固含量, 乳液F固含量]]
 X_solids_content = [[乳液A固含量, 乳液F固含量, 水, 乳液A粘度, 水溶液E, 乳液F粘度]]
 
 if st.button("🔍 预测"):
